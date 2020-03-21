@@ -2,9 +2,18 @@ package oop;
 
 public class Addition {
 	
+	//static - class variable
+	static String functionName;
+	
+	//static block to assign values to static variable
+	static {
+		functionName = "Addition";
+	}
+
+	//functionName = "Addition";
 	//instance variable
-	int num1;
-	int num2;
+	private int num1;
+	private int num2;
 	
 	//constructor - purpose is to initialize an object
 	//special type of method - with no return type and name exactly as class name
@@ -24,6 +33,7 @@ public class Addition {
 		System.out.println("The Sum is: "+sum);		
 	}
 	
+	//method overloading - compile time polymorphism
 	int add(int a, int b, int c) {
 		int sum = a+b+c;
 		System.out.println("Sum of three number is: "+sum);
@@ -37,6 +47,8 @@ public class Addition {
 	}
 		
 	public static void main(String[] args) {
+		
+		System.out.println("The functionality is "+functionName);
 		//creating object using no parameter constructor
 		Addition a1 = new Addition();
 		//a1.num1 = 35;
