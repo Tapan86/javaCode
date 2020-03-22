@@ -34,13 +34,13 @@ public class Addition {
 	}
 	
 	//method overloading - compile time polymorphism
-	int add(int a, int b, int c) {
+	public int add(int a, int b, int c) {
 		int sum = a+b+c;
 		System.out.println("Sum of three number is: "+sum);
 		return sum;
 	}
 	
-	double add(double a, double b, double c) {
+	protected double add(double a, double b, double c) {
 		double sum = a+b+c;
 		System.out.println("Sum of three number is: "+sum);
 		return sum;

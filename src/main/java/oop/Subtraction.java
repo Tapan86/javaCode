@@ -6,7 +6,7 @@ public class Subtraction extends Addition{
 	//--private -- accessible with the class
 	//--public -- accessible within the project
 	//--default --accessible with the package
-	//--protected
+	//--protected -- accessible within package & Outside of package if inherited
 	
 	static String functionName = "Subtraction";
 	
@@ -16,13 +16,13 @@ public class Subtraction extends Addition{
 		System.out.println("Sub of Addition class - my value: "+s);		
 	}
 	
-	void sub(int x, int y) {
+	public void sub(int x, int y) {
 		int sub;
 		sub = x-y;
 		System.out.println("Subtraction: "+sub);
 	}
 	//method overriding - runtime polymorphism 
-	double add(double a, double b, double c) {
+	protected double add(double a, double b, double c) {
 		double sum = super.add(a, b, c);
 		double s = sum-1.0;
 		System.out.println("Sum of three number is: "+s);
@@ -35,6 +35,7 @@ public class Subtraction extends Addition{
 		
 		Subtraction s1 = new Subtraction();
 		s1.add();
+		s1.add(100.50, 50.75, 20.15);
 
 	}
 
