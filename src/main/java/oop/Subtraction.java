@@ -36,7 +36,5 @@ public class Subtraction extends Addition{
 		Subtraction s1 = new Subtraction();
 		s1.add();
 		s1.add(100.50, 50.75, 20.15);
-
-	}
-
-}
+	}//end of main
+}//end of class
