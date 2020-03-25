@@ -19,5 +19,4 @@ public class Division extends Subtraction{
 		Addition a1 = new Addition();
 		a1.add(100, 100, 100);
 	}
-
 }
