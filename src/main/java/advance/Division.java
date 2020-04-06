@@ -9,8 +9,16 @@ public class Division extends Subtraction{
 		double d = x/y;
 		System.out.println("Division of two values: "+d);
 	}
+	
+	static void div(int x, int y) {
+		int d = x/y;
+		System.out.println("Division of two values: "+d);
+	}
 
 	public static void main(String[] args) {
+		
+		//calling a static method
+		div(100,10);
 		
 		Division d1 = new Division();
 		d1.div(10.5, 2.5);

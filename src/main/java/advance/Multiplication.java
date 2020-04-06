@@ -4,6 +4,9 @@ import oop.Addition;
 
 public class Multiplication extends Addition{
 	
+	final double pi= 3.14;
+	
+	
 	void multiple(int x, int y) {
 		int m;
 		m=x*y;
@@ -13,7 +16,10 @@ public class Multiplication extends Addition{
 	public static void main(String[] args) {
 		Multiplication m1 = new Multiplication();
 		m1.add(10, 10, 10);
-		//m1.
+		
+		//calling static method from division class
+		Division.div(200, 10);
+		
 
 	}
 
