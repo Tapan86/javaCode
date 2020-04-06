@@ -32,6 +32,7 @@ public class Subtraction extends Addition{
 	public static void main(String[] args) {
 		
 		System.out.println(Addition.functionName);
+		System.out.println(Subtraction.functionName);
 		
 		Subtraction s1 = new Subtraction();
 		s1.add();
